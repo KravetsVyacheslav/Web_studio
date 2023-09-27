@@ -1,9 +1,16 @@
-$var1: #ffffff;
-$var2: #D9D9D9;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .foto {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	list-style: none;
 	padding: 50px 0px 94px;
 	&_emet {
@@ -14,7 +21,7 @@ $var2: #D9D9D9;
 		height: 70px;
 	}
 	&_text {
-		color: $var2;
+		color: $shade_of_gray_1;
 		text-align: center;
 		text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 		font-size: 14px;
@@ -26,8 +33,12 @@ $var2: #D9D9D9;
 }
 .page:hover {
 	translate: 20px -20px;
-	transition-duration: 0.5s;
-	transition-delay: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	     -o-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	     -o-transition-delay: 0.5s;
+	        transition-delay: 0.5s;
 }
 .page h5 {
 	font-family: "Roboto";
@@ -38,7 +49,7 @@ $var2: #D9D9D9;
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: $var1;
+	color: $white_color;
 }
 .page {
 	position: relative;

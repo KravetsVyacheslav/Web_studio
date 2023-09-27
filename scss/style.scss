@@ -1,0 +1,54 @@
+@import "./utils/color";
+@import "./components/header";
+@import "./components/modal";
+@import "./components/clients";
+@import "./components/card";
+@import "./components/team";
+@import "./components/page";
+@import "./components/btn";
+@import "./components/feature";
+@import "./components/futer";
+@import "./components/promo";
+@import "./components/portfolio";
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+span {
+	color: $sky_color;
+}
+.h2 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $black_color;
+	padding: 94px 0px 50px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+li {
+	text-decoration: none;
+	list-style: none;
+}
+.Studio {
+	margin: 0 auto;
+}
+button {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}

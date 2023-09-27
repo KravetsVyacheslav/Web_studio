@@ -1,18 +1,23 @@
-$var1: #ffffff;
-$var2: #eeeeee;
-$var3: #212121;
-$var4: #757575;
-$var5: #000101;
-$var6: #ffffff;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .cards_list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .card {
-	background: $var1;
-	border: 1px solid $var2;
+	background: $white_color;
+	border: 1px solid $shade_of_gray_3;
 	width: 360px;
 	height: 404px;
 	margin-top: 30px;
@@ -22,12 +27,16 @@ $var6: #ffffff;
 		display: block;
 		width: 100%;
 		height: 71%;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 191, 255)), to(skyblue));
+		background: -o-linear-gradient(top, rgb(0, 191, 255), skyblue);
 		background: linear-gradient(to bottom, rgb(0, 191, 255), skyblue);
 		position: absolute;
 		opacity: 0;
 	}
 	&:hover::before {
 		opacity: 0.8;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
 		transition: 0.5s;
 	}
 	a {
@@ -39,13 +48,13 @@ $var6: #ffffff;
 		font-size: 18px;
 		line-height: 36px;
 		letter-spacing: 0.06em;
-		color: $var3;
+		color: $black_color;
 	}
 	/* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: $black_color;
 }
 .card h4 {
   margin-top: 4px;
@@ -59,17 +68,17 @@ $var6: #ffffff;
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: $gray_color;
 }
 .card img {
   width: 100%;
 }
 
 .card > a {
-  color: #000101;
+  color: $shade_of_black;
 }
 .card_hover {
-  color: #fff;
+  color: $white_color;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -84,16 +93,16 @@ $var6: #ffffff;
 		font-size: 16px;
 		line-height: 30px;
 		letter-spacing: 0.03em;
-		color: $var4;
+		color: $gray_color;
 	}
 	img {
 		width: 100%;
 	}
 	> a {
-		color: $var5;
+		color: $shade_of_black;
 	}
 	&_hover {
-		color: $var6;
+		color: $white_color;
 		font-family: Roboto;
 		font-size: 18px;
 		font-style: normal;

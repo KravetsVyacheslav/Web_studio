@@ -1,9 +1,12 @@
-$var1: #f5f4fa;
-$var2: #ffffff;
-$var3: #2196f3;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .svg_foto {
-	background-color: $var1;
+	background-color: $whitish_color;
 	border-radius: 4px;
 	width: 270px;
 	height: 120px;
@@ -12,7 +15,7 @@ $var3: #2196f3;
 }
 .promo {
 	padding: 200px 0px;
-	background-image: url(..;
+	background-image: url(../img/page1/Imgbig.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -29,15 +32,15 @@ h1 {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: $var2;
-}
+	color: $white_color;
+
 /* or 136% */
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color:$white_color;
 }
 .btr {
   width: 216px;
@@ -49,7 +52,7 @@ h1 {
   font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 188% */
-
+}
 .btr {
 	width: 216px;
 	height: 50px;
@@ -61,9 +64,10 @@ h1 {
 	line-height: 30px;
 	text-align: center;
 	letter-spacing: 0.06em;
-	color: $var2;
-	background: $var3;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	color: $white_color;
+	background: $sky_color;
+	-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	display: block;
 	margin: 0 auto;

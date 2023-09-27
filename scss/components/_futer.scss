@@ -1,7 +1,9 @@
-$var1: #ffffff;
-$var2: #2f303a;
-$var3: #ffffff;
-$var4: #2196f3;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .futer_nav_website h4 {
 	font-family: "Roboto";
@@ -12,7 +14,7 @@ $var4: #2196f3;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	margin: 0;
-	color: $var1;
+	color: $white_color;
 }
 .futer_nav_website a {
 	display: block;
@@ -46,17 +48,21 @@ $var4: #2196f3;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: $white_color;
 }
 
 .futer_nav_website a:hover,
 .futer_nav_website a:hover i {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: $sky_color;
+  color: $white_color;
 }
 
 .futer_nav_website ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   padding: 0;
@@ -73,7 +79,7 @@ $var4: #2196f3;
 }
 
 .footer_title_smoll {
-  color: #fff;
+  color: $white_color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -94,17 +100,19 @@ $var4: #2196f3;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 358px;
   height: 50px;
 }
 .list button {
   border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: $sky_color;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
-  color: #fff;
+  color: $white_color;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -112,21 +120,27 @@ $var4: #2196f3;
   font-weight: 700;
   line-height: 30px; /* 187.5% */
 	&:hover, &:hover i {
-		background-color: $var4;
-		color: $var1;
+		background-color: $sky_color;
+		color: $white_color;
 	}
 }
 footer {
-	background-color: $var2;
+	background-color: $grayish_color;
 	padding: 72px 0 60px 0;
 	.container {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 	}
 }
 .adress1 {
-	color: $var3;
+	color: $white_color;
 	font-family: Roboto;
 	font-size: 14px;
 	font-style: normal;
@@ -156,10 +170,14 @@ footer {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	color: $var3;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	color: $white_color;
 }
 .futer_nav_website ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 10px;
 	padding: 0;
@@ -174,7 +192,7 @@ footer {
 	padding-left: 36px;
 }
 .footer_title_smoll {
-	color: $var3;
+	color: $white_color;
 	font-family: Roboto;
 	font-size: 14px;
 	font-style: normal;
@@ -194,17 +212,19 @@ footer {
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background: rgba(33, 150, 243, 0);
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	width: 358px;
 	height: 50px;
 }
 .list button {
 	border-radius: 4px;
-	background: $var4;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	background: $sky_color;
+	-webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	width: 200px;
 	height: 50px;
-	color: $var3;
+	color: $white_color;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 16px;
@@ -215,6 +235,8 @@ footer {
 	border: none;
 }
 .footer_box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 12px;
 	margin-top: 20px;

@@ -1,11 +1,22 @@
-$var1: #212121;
-$var2: #757575;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .feature_items {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	box-sizing: border-box;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding: 0;
 }
 .feature_item {
@@ -19,7 +30,7 @@ $var2: #757575;
 		line-height: 16px;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
-		color: $var1;
+		color: $black_color;
 	}
 	> p {
 		font-family: "Roboto";
@@ -27,7 +38,7 @@ $var2: #757575;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 24px;
-		color: $var2;
+		color: $gray_color;
 		letter-spacing: 0.03em;
 	}
 }
@@ -45,6 +56,8 @@ $var2: #757575;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
 	}
 }

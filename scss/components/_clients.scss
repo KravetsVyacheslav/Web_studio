@@ -1,0 +1,42 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.clients path {
+	border-radius: 0;
+	border: inset;
+	fill: $shade_of_gray_2;
+}
+.clients li:hover {
+	border: 1px solid $sky_color;
+}
+.clients li {
+	border: 1px solid $shade_of_gray_2;
+	border-radius: 4px;
+	margin: 15px;
+	padding: 1px 13px;
+}
+.clients h3 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $black_color;
+}
+.clients ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.clients_a path:hover {
+	color: $shade_of_gray_2;
+}

@@ -1,7 +1,9 @@
-$var1: #ffffff;
-$var2: #2196f3;
-$var3: #212121;
-$var4: #757575;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 .backdrop {
 	position: fixed;
@@ -20,15 +22,19 @@ $var4: #757575;
 	z-index: 909999999999999999;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 528px;
 	height: 651px;
 	border-radius: 4px;
-	background: $var1;
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+	background: $white_color;
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+	        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	&_title {
-		color: $var3;
+		color: $black_color;
 		text-align: center;
 		font-family: Roboto;
 		font-size: 20px;
@@ -49,8 +55,9 @@ $var4: #757575;
 		width: 200px;
 		height: 50px;
 		border-radius: 4px;
-		background: $var2;
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+		background: $sky_color;
+		-webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+		        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 		border: none;
 		left: 30%;
 	}
@@ -73,10 +80,10 @@ $var4: #757575;
 	top: 3%;
 }
 i:hover {
-	color: $var2;
+	color: $sky_color;
 }
 .form_box:hover input {
-	border-color: $var2;
+	border-color: $sky_color;
 }
 .is-hidden {
 	display: none;
@@ -85,10 +92,10 @@ i:hover {
 	overflow: hidden;
 }
 .form_box:hover i {
-	color: $var2;
+	color: $sky_color;
 }
 .main_modal_deskr {
-	color: $var4;
+	color: $gray_color;
 	font-family: Roboto;
 	font-size: 14px;
 	font-style: normal;
